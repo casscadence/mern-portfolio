@@ -1,11 +1,4 @@
-.create-tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  transition: opacity 0.3s;
-}
-
-.create-tooltip .create-tooltiptext {
+.create-tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: #555;
@@ -22,7 +15,7 @@
   transition: opacity 0.3s;
 }
 
-.create-tooltip .create-tooltiptext::after {
+.create-tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -34,7 +27,7 @@
   transition: opacity 0.3s;
 }
 
-.create-tooltip:hover .create-tooltiptext {
+.create-tooltiptext {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
