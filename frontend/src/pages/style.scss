@@ -1,4 +1,7 @@
 .create-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
   transition: opacity 0.3s;
 }
 
@@ -28,5 +31,11 @@
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  transition: opacity 0.3s;
+}
+
+.create-tooltip:hover .create-tooltiptext {
+  visibility: visible;
+  opacity: 1;
   transition: opacity 0.3s;
 }
